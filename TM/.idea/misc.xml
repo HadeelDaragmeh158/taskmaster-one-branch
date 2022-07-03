@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.124" />
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/layout/activity_add_task.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/layout/activity_display_message.xml" value="0.1734375" />
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/layout/activity_login.xml" value="0.1734375" />
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/layout/activity_settings.xml" value="0.1734375" />
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/layout/activity_signup.xml" value="0.1734375" />
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/layout/activity_task_detail.xml" value="0.1734375" />
+        <entry key="..\:/Users/Lenovo/Desktop/New folder/taskmaster/app/src/main/res/layout/activity_verification.xml" value="0.1734375" />
+        <entry key="..\:/Users/Lenovo/Desktop/taskmaster-one-branch/app/src/main/res/layout/activity_login.xml" value="0.1734375" />
+        <entry key="..\:/Users/Lenovo/Desktop/taskmaster-one-branch/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Lenovo/Desktop/taskmaster-one-branch/app/src/main/res/layout/activity_settings.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Lenovo/Desktop/taskmaster-one-branch/app/src/main/res/layout/activity_signup.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/Desktop/taskmaster-one-branch/app/src/main/res/layout/activity_task_detail.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_add_task.xml" value="0.33" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_all_tasks.xml" value="0.18" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_display_message.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_settings.xml" value="0.2" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_signup.xml" value="0.1" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_task_detail.xml" value="0.22" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/layout/activity_verification.xml" value="0.25" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/menu/main.xml" value="0.1" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster/app/src/main/res/menu/menu_main.xml" value="0.1" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster2/app/src/main/res/layout/activity_add_task.xml" value="0.33" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster2/app/src/main/res/layout/activity_all_tasks.xml" value="0.1625" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster2/app/src/main/res/layout/activity_display_message.xml" value="0.1765625" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/acer/ASAC/taskmaster2/app/src/main/res/layout/activity_main2.xml" value="0.10462962962962963" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
