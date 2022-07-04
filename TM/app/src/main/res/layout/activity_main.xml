@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <!--    android:background="@drawable/hotel_recovery__rvt_2019_apr_20_10_20_06pm_000_3d_view_3_png"-->
 
     <TextView
         android:id="@+id/usernameHeader"
@@ -47,26 +46,26 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/add_task"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintEnd_toStartOf="@+id/settings"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <Button
         android:id="@+id/allTasksButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
         android:backgroundTint="#669C27B0"
+        android:fontFamily="sans-serif-black"
 
         android:text="@string/all_tasks"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintVertical_bias="0.201" />
 
     <ListView
         android:id="@+id/tasksList"
@@ -84,11 +83,11 @@
         android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="48dp"
         android:backgroundTint="#669C27B0"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="160dp"
         android:text="@string/settings"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/allTasksButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.gms.ads.AdView

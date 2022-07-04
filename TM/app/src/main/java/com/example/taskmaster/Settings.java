@@ -27,7 +27,7 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
 
-        final String[] mTeam = new String[]{"Design", "Render", "Poster"};
+        final String[] mTeam = new String[]{"Team1", "Team2", "Team3"};
 
         Spinner TeamNameSelector = findViewById(R.id.team_spinner);
         ArrayAdapter<String> teamSpinnerAdapter = new ArrayAdapter<String>(
@@ -81,13 +81,12 @@ public class Settings extends AppCompatActivity {
         preferenceEditor.putString(TEAM_NAME,teamName);
         preferenceEditor.apply();
     }
-
-    //    private void saveUsername (String username){
+//     private void saveUsername (String username){
 //
-//        //create sharedPreference and set up an editor
+
 //        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 //        SharedPreferences.Editor preferenceEditor = sharedPreferences.edit();
-//        //save
+
 //        preferenceEditor.putString(USERNAME,username);
 //        preferenceEditor.apply();
 //    }

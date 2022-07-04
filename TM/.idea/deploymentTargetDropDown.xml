@@ -6,12 +6,12 @@
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="SERIAL_NUMBER" />
-            <value value="AFMEUT1B23007794" />
+            <type value="VIRTUAL_DEVICE_PATH" />
+            <value value="C:\Users\Lenovo\.android\avd\Pixel_4_API_Tiramisu_3.avd" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-07-04T08:49:26.733335500Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-07-04T09:16:09.763924600Z" />
   </component>
 </project>

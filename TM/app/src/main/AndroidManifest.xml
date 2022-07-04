@@ -33,11 +33,11 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".AllTasksAct"
+            android:name=".AllTasks"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".AddTaskAct"
+            android:name=".AddTask"
             android:exported="true"
             android:parentActivityName=".MainActivity" >
 
