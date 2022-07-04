@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tmvcapp-dev-85659-authRole",
+      "UnauthRoleArn": "arn:aws:iam::319623268585:role/amplify-tmvcapp-dev-85659-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::319623268585:role/amplify-tmvcapp-dev-85659-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-tmvcapp-dev-85659-deployment",
+      "UnauthRoleName": "amplify-tmvcapp-dev-85659-unauthRole",
+      "StackName": "amplify-tmvcapp-dev-85659",
+      "StackId": "arn:aws:cloudformation:us-east-1:319623268585:stack/amplify-tmvcapp-dev-85659/21a93e40-fb5e-11ec-accd-0abd6d88c69b",
+      "AmplifyAppId": "d34oj74jbd95k5"
+    },
+    "categories": {
+      "auth": {
+        "tmvcapp": {}
+      }
+    }
+  }
+}

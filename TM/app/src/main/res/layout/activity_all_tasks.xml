@@ -15,5 +15,5 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hotel_recovery__rvt_2019_apr_20_10_20_06pm_000_3d_view_3_png" />
+        app:srcCompat="@drawable/ic_baseline_supervised_user_circle_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
