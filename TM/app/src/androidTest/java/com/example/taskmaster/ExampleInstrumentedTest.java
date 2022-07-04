@@ -62,7 +62,7 @@ public class ExampleInstrumentedTest {
 //        onView(withId(android.R.id.home)).perform(click());
 //        ViewActions.pressBack();
 
-        onView(withId(R.id.usernameHeader)).check(matches(withText("Lama Tasks")));
+        onView(withId(R.id.usernameHeader)).check(matches(withText("Maria Tasks")));
     }
 
     @Test
