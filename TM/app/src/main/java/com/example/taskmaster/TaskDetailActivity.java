@@ -35,7 +35,7 @@ public class TaskDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_detail);
 
-        changeTaskName();
+        TaskNameChange();
         changeTaskBody();
         changeTaskState();
         translate();
@@ -91,7 +91,7 @@ public class TaskDetailActivity extends AppCompatActivity {
         );
     }
 
-    private void changeTaskName() {
+    private void TaskNameChange() {
         TextView mTitle = findViewById(R.id.title);
         String title = getIntent().getStringExtra("title");
         mTitle.setText(title);
@@ -116,8 +116,7 @@ public class TaskDetailActivity extends AppCompatActivity {
                     Log.i(TAG, "The root path is: " + getApplicationContext().getFilesDir());
                     Log.i(TAG, "Successfully downloaded: " + result.getFile().getName());
 
-                    //https://iqcode.com/code/other/how-to-get-bitmap-from-file-in-android
-                    // Rendering the image must be in here
+
                     ImageView image = findViewById(R.id.task_image);
                     Bitmap bitmap = BitmapFactory.decodeFile(getApplicationContext().getFilesDir()+"/"+result.getFile().getName());
                     image.setImageBitmap(bitmap);

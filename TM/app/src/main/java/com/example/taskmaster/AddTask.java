@@ -36,7 +36,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class AddTaskAct extends AppCompatActivity {
+public class AddTask extends AppCompatActivity {
     private static final String TAG = "test";
     public static final int REQUEST_CODE = 123;
 
@@ -88,13 +88,13 @@ public class AddTaskAct extends AppCompatActivity {
         });
 
         Button button = findViewById(R.id.button);
-        //find the team
+
         button.setOnClickListener(view -> {
             String team = taskTeamSelector.getSelectedItem().toString();
             Amplify.API.query(ModelQuery
                             .list(Team.class, Team.NAME.eq(team)),
                     success->{
-                        for (Team curTeam :
+                        for (Team currentT :
                                 success.getData()) {
                             EditText titleField = findViewById(R.id.title);
                             String title = titleField.getText().toString();
@@ -111,8 +111,8 @@ public class AddTaskAct extends AppCompatActivity {
                                     .title(title)
                                     .body(body)
                                     .status(state)
-                                    .teamTasksId(curTeam.getId())
-                                    .imagePath(image) // image key not path
+                                    .teamTasksId(currentT.getId())
+                                    .image(image) // image key not path
                                     .build();
 
                             Amplify.DataStore.save(newTask,

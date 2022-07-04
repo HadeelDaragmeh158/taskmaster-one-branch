@@ -24,13 +24,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.amplifyframework.AmplifyException;
 import com.amplifyframework.analytics.AnalyticsEvent;
-import com.amplifyframework.api.aws.AWSApiPlugin;
 import com.amplifyframework.api.graphql.model.ModelQuery;
-import com.amplifyframework.auth.cognito.AWSCognitoAuthPlugin;
 import com.amplifyframework.core.Amplify;
-import com.amplifyframework.datastore.AWSDataStorePlugin;
 import com.amplifyframework.datastore.generated.model.Task;
 import com.amplifyframework.datastore.generated.model.Team;
 import com.google.android.gms.ads.AdError;
@@ -116,7 +112,7 @@ public class MainActivity extends AppCompatActivity  {
 
         Button addTaskButton = findViewById(R.id.addTaskButton);
         addTaskButton.setOnClickListener(view -> {
-            Intent addTaskIntent = new Intent(this, AddTaskAct.class);
+            Intent addTaskIntent = new Intent(this, AddTask.class);
             startActivity(addTaskIntent);
             analytics("addTask_btn");
 
@@ -124,7 +120,7 @@ public class MainActivity extends AppCompatActivity  {
 
         Button allTasksButton = findViewById(R.id.allTasksButton);
         allTasksButton.setOnClickListener(view -> {
-            Intent allTasksIntent = new Intent(this, AllTasksAct.class);
+            Intent allTasksIntent = new Intent(this, AllTasks.class);
             startActivity(allTasksIntent);
             analytics("allTasks_btn");
 
@@ -158,7 +154,7 @@ public class MainActivity extends AppCompatActivity  {
     private void logout (){
         Amplify.Auth.signOut(
                 () -> {
-                    Log.i(TAG, "Signed out successfully");
+                    Log.i(TAG, "Signed out");
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                     authSession("logout");
                     finish();
@@ -186,10 +182,10 @@ public class MainActivity extends AppCompatActivity  {
         Amplify.API.query(ModelQuery
                         .list(Team.class, Team.NAME.eq(teamName)),
                 success-> {
-                    for (Team curTeam :
+                    for (Team currentT :
                             success.getData()) {
 
-                        tasks = findTasksAPI(curTeam.getId());
+                        tasks = findTasksAPI(currentT.getId());
 
                         handler = new Handler(Looper.getMainLooper() , msg -> {
 
@@ -213,6 +209,7 @@ public class MainActivity extends AppCompatActivity  {
                                     return view;
                                 }
                             };
+
                             tasksList.setAdapter(taskArrayAdapter);
 
                             tasksList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -220,19 +217,19 @@ public class MainActivity extends AppCompatActivity  {
                                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                                     Intent taskIntent = new Intent(getApplicationContext(),TaskDetailActivity.class);
 
-                                    Log.i(TAG, "onItemClick: "+tasks.get(i).getImagePath());
+                                    Log.i(TAG, "onItemClick: "+tasks.get(i).getImage());
 
 
                                     taskIntent.putExtra("title",tasks.get(i).getTitle());
                                     taskIntent.putExtra("body",tasks.get(i).getBody());
                                     taskIntent.putExtra("state",tasks.get(i).getStatus());
-                                    taskIntent.putExtra("imageKey",tasks.get(i).getImagePath());
+                                    taskIntent.putExtra("imageKey",tasks.get(i).getImage());
 
 
                                     startActivity(taskIntent);
                                 }
                             });
-                            return true ; //for the handler
+                            return true ;
                         });
                     }
                 },
@@ -288,7 +285,6 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     private void  changeTeamName(){
-        //        receive the team name from settings
         TextView mTeamName = findViewById(R.id.team_name);
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -296,10 +292,11 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     private void  changeUsername(){
-        //        receive the team name from settings
-        TextView mTeamName = findViewById(R.id.usernameHeader);
 //        String teamNameText = getIntent().getStringExtra(TEAM_NAME);
 //        mTeamName.setText(teamNameText);
+
+        TextView mTeamName = findViewById(R.id.usernameHeader);
+
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mTeamName.setText(sharedPreferences.getString(LoginActivity.USERNAME,"My Tasks"));
     }
@@ -360,14 +357,14 @@ public class MainActivity extends AppCompatActivity  {
                             @Override
                             public void onAdFailedToShowFullScreenContent(AdError adError) {
                                 // Called when ad fails to show.
-                                Log.d(TAG, "Ad failed to show.");
+                                Log.d(TAG, "Ad fail  show.");
                             }
 
                             @Override
                             public void onAdDismissedFullScreenContent() {
                                 // Called when ad is dismissed.
                                 // Set the ad reference to null so you don't show the ad a second time.
-                                Log.d(TAG, "Ad was dismissed.");
+                                Log.d(TAG, "Ad  dismissed.");
                                 mRewardedAd = null;
                             }
                         });
@@ -398,7 +395,7 @@ public class MainActivity extends AppCompatActivity  {
                             @Override
                             public void onAdFailedToShowFullScreenContent(AdError adError) {
                                 // Called when fullscreen content failed to show.
-                                Log.d(TAG, "The ad failed to show.");
+                                Log.d(TAG, "The  failed  show.");
                             }
 
                             @Override
