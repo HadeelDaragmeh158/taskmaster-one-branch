@@ -50,14 +50,34 @@ public class AddTask extends AppCompatActivity {
         setContentView(R.layout.activity_add_task);
 
         final String[] mTeam = new String[]{"Team1", "Team2", "Team3"};
-
+//-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
+//        Team team1 = Team.builder().name("Team1").build();
+//        Team team2 = Team.builder().name("Team2").build();
+//        Team team3 = Team.builder().name("Team3").build();
+//
+//        Amplify.API.mutate(ModelMutation.create(team1),
+//                response -> Log.i("MyAmplifyApp", "Todo with id: " + response.getData().getId()),
+//                error -> Log.e("MyAmplifyApp", "Create failed", error)
+//        );
+//
+//        Amplify.API.mutate(ModelMutation.create(team2),
+//                response -> Log.i("MyAmplifyApp", "Todo with id: " + response.getData().getId()),
+//                error -> Log.e("MyAmplifyApp", "Create failed", error)
+//        );
+//
+//        Amplify.API.mutate(ModelMutation.create(team3),
+//                response -> Log.i("MyAmplifyApp", "Todo with id: " + response.getData().getId()),
+//                error -> Log.e("MyAmplifyApp", "Create failed", error)
+//        );
+//
+//------------------------------------------------
         taskTeamSelector = findViewById(R.id.task_team_spinner);
         ArrayAdapter<String> teamSpinnerAdapter = new ArrayAdapter<>(
                 getApplicationContext(),
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,
                 mTeam
         );
-
         taskTeamSelector.setAdapter(teamSpinnerAdapter);
 
         final String[] mState = new String[]{"New", "Assigned", "In progress", "complete"};
