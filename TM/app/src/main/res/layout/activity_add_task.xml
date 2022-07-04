@@ -72,7 +72,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.789" />
+        app:layout_constraintVertical_bias="0.789"        android:backgroundTint="#669C27B0"
+
+        />
 
     <EditText
         android:id="@+id/body"
@@ -120,6 +122,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addImageBtn"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="#669C27B0"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

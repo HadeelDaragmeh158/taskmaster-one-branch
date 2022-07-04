@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "tmvcapp",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/mnt/c/Users/Lenovo/Desktop/last/taskmaster-one-branch/TM/amplify/backend/api/tmvcapp/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

@@ -33,7 +33,8 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/task_image"
-        app:layout_constraintVertical_bias="0.475" />
+        app:layout_constraintVertical_bias="0.475"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/title"
@@ -98,6 +99,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/task_image"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

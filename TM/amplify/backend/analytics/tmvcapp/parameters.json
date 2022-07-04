@@ -1,0 +1,21 @@
+{
+    "appName": "tmvcapp",
+    "roleName": "pinpointLambdaRole95a9c7a5",
+    "cloudformationPolicyName": "cloudformationPolicy95a9c7a5",
+    "cloudWatchPolicyName": "cloudWatchPolicy95a9c7a5",
+    "pinpointPolicyName": "pinpointPolicy95a9c7a5",
+    "authPolicyName": "pinpoint_amplify_95a9c7a5",
+    "unauthPolicyName": "pinpoint_amplify_95a9c7a5",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
